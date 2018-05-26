@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/gameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false" />
+
+        <Space
+            android:id="@+id/space2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:clickable="false" />
+
+        <TextView
+            android:id="@+id/choice1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@id/space"
+            android:layout_alignRight="@id/space"
+            android:background="#42f480"
+            android:clickable="false"
+            android:onClick="choice"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/choice2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignRight="@id/space"
+            android:layout_alignTop="@id/space"
+            android:background="#42f4d7"
+            android:clickable="false"
+            android:onClick="choice"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/choice3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignBottom="@id/space"
+            android:layout_alignLeft="@id/space"
+            android:background="#42c8f4"
+            android:textColor="#ffffff"
+            android:onClick="choice"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/choice4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignLeft="@id/space"
+            android:layout_alignTop="@id/space"
+            android:background="#4268f4"
+            android:textColor="#ffffff"
+            android:onClick="choice"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/time_left"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@id/space2"
+            android:layout_alignRight="@id/space2"
+            android:layout_alignTop="@id/space2"
+            android:background="#f44248"
+            android:textColor="#ffffff"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/space2"
+            android:layout_alignStart="@id/space2"
+            android:layout_alignTop="@id/space2"
+            android:background="#f4c542"
+            android:textColor="#ffffff"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choice2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="143dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/play_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="Welcome to the Integer Arithmetic Game!" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="play_button"
+            android:id="@+id/play_button"
+            android:padding="50dp"
+            android:text="@string/play_button" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
